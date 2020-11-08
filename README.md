@@ -96,13 +96,22 @@ tokens:
 	 - Lists added tokens
 
 ## Screenshots
-Sending tokens
+- Sending tokens
+
 ![Sending tokens](https://i.imgur.com/eUER1oA.png)
-Account unlocking
+
+- Account unlocking
+
 ![Account unlocking](https://i.imgur.com/gl6mhYr.png)
-Account creation
+
+- Account creation
+
 ![Account creation](https://i.imgur.com/dNfAh4H.png)
-Account removal
+
+- Account removal
+
 ![Account removal](https://i.imgur.com/8Ku38tP.png)
-Account import
+
+- Account import
+
 ![Account import](https://i.imgur.com/8GRA6S3.png)
