@@ -1,6 +1,4 @@
-
-
-# ZILCraft
+# ![ZILCraft logo](https://i.imgur.com/yAuVlUe.png =32x32)	ZILCraft
 Looking for the download link? [**Click here**](https://github.com/Dodecane/ZILCraft/releases/download/v0.0.10/ZILCraft-0.0.10.jar) Supported Spigot versions: v1.16.3+
 
 ZILCraft is a plugin which adds Zilliqa wallets to your Spigot Server.<br>
