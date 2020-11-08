@@ -62,7 +62,7 @@ tokens:
  - /zilcraft unlock < account name > 
 	 - Permission node: `zilcraft.unlock`(default all)
 	 - Unlocks account
- - /zilcraft lock < account name >
+ - /zilcraft lock
 	 - Permission node: `zilcraft.lock`(default all)
 	 - Locks account
  - /zilcraft account create
