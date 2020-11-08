@@ -1,16 +1,19 @@
 
 
 # ZILCraft
-Looking for the download link? [**Click here**](https://github.com/Dodecane/ZILCraft/releases/download/v0.0.10/ZILCraft-0.0.10.jar) Supported Minecraft versions: 1.16.3+
+Looking for the download link? [**Click here**](https://github.com/Dodecane/ZILCraft/releases/download/v0.0.10/ZILCraft-0.0.10.jar) Supported Spigot versions: v1.16.3+
 
 ZILCraft is a plugin which adds Zilliqa wallets to your Spigot Server.<br>
 Players can create their own Zilliqa wallets and send tokens to each other within the game. They can even do so without needing to know the recipient's address.<br>
 
-## See it in action
-Demo Video
+## Demo video
+See ZILCraft in action<br>
 [![Watch the video](https://img.youtube.com/vi/jA_NHfMYGJo/maxresdefault.jpg)](https://youtu.be/jA_NHfMYGJo)
 
-Demo server [Coming soon]
+## Demo server
+Try out ZILCraft yourself<br>
+Server IP: 18.140.217.25<br>
+Supported Minecraft versions: Minecraft Java Edition v1.16.4 and Minecraft Bedrock Edition v1.16.x 
 
 ## How to install
 
@@ -35,7 +38,7 @@ tokens:
 		formatting: <minecraft format code surrounded by quotes> e.g. "&9"
 ```
 
-## Commands and Permission Node List
+## Command and Permission Node List
 
  - /zilcraft help
 	 - Shows help for ZILCraft commands
