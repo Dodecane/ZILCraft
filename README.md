@@ -55,10 +55,10 @@ tokens:
  - /zilcraft network set <mainnet | testnet>
 	 - Permission node: `zilcraft.network.set`(default op)
 	 - Changes network
- - /zilcraft unlock <account name> 
+ - /zilcraft unlock < account name> 
 	 - Permission node: `zilcraft.unlock`(default all)
 	 - Unlocks account
- - /zilcraft lock <account name>
+ - /zilcraft lock < account name>
 	 - Permission node: `zilcraft.lock`(default all)
 	 - Locks account
  - /zilcraft account create
@@ -73,10 +73,10 @@ tokens:
  - /zilcraft account remove <account name | all>
 	 - Permission node: `zilcraft.account.remove`(default all)
 	 - Removes account(s)
- - /zilcraft account set <account name>
+ - /zilcraft account set < account name>
 	 - Permission node: `zilcraft.account.set`(default all)
 	 - Sets active account
- - /zilcraft account rename <account name> <new account name>
+ - /zilcraft account rename < account name> < new account name>
 	 - Permission node: `zilcraft.account.rename`(default all)
 	 - Renames account
  - /zilcraft account list
@@ -85,7 +85,7 @@ tokens:
  - /zilcraft send <username | address>
 	 - Permission node: `zilcraft.send`(default all)
 	 - Sends tokens to a player or address
- - /zilcraft token add <mainnet | testnet> <contract address>
+ - /zilcraft token add <mainnet | testnet> < contract address>
 	 - Permission node: `zilcraft.token.add`(default all)
 	 - Adds token by contract address
  - /zilcraft token remove <mainnet | testnet> <token name(s)>
@@ -96,4 +96,13 @@ tokens:
 	 - Lists added tokens
 
 ## Screenshots
-[WIP]
+Sending tokens
+![Sending tokens](https://i.imgur.com/eUER1oA.png)
+Account unlocking
+![Account unlocking](https://i.imgur.com/gl6mhYr.png)
+Account creation
+![Account creation](https://i.imgur.com/dNfAh4H.png)
+Account removal
+![Account removal](https://i.imgur.com/8Ku38tP.png)
+Account import
+![Account import](https://i.imgur.com/8GRA6S3.png)
