@@ -64,9 +64,6 @@ tokens:
  - /zilcraft account create
 	 - Permission node: `zilcraft.account.create`(default all)
 	 - Creates new account
- - /zilcraft account create
-	 - Permission node: `zilcraft.account.create`(default all)
-	 - Creates new account
  - /zilcraft account import privatekey
 	 - Permission node: `zilcraft.account.import`(default all)
 	 - Imports existing account
