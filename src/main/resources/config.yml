@@ -1,0 +1,7 @@
+# Available network types are "mainnet" and "testnet", add custom tokens in the following format (all 3 fields are required)
+network: testnet
+tokens:
+  XSGD:
+    mainnet: zil1zu72vac254htqpg3mtywdcfm84l3dfd9qzww8t
+    testnet: zil10a9z324aunx2qj64984vke93gjdnzlnl5exygv
+    formatting: "&9"

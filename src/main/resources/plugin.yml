@@ -1,0 +1,54 @@
+main: dodecane2242.zilcraft.App
+name: ZILCraft
+version: 0.0.9
+description: Zilliqa plugin for Minecraft
+author: dodecane2242
+commands:
+  test:
+permissions:
+  zilcraft:
+    description: Allows usage of /zilcraft
+    default: true
+    children:
+      zilcraft.reload:
+        description: Allows usage of /zilcraft reload
+        default: op
+      zilcraft.save:
+        description: Allows usage of /zilcraft save
+        default: op
+      zilcraft.balance:
+        description: Allows usage of /zilcraft balance
+      zilcraft.unlock:
+        description: Allows usage of /zilcraft unlock
+      zilcraft.lock:
+        description: Allows usage of /zilcraft lock
+      zilcraft.send:
+        description: Allows usage of /zilcraft send
+      zilcraft.network:
+        description: Allows usage of /zilcraft network
+        children:
+          zilcraft.network.set:
+            description: Allows usage of /zilcraft network set
+            default: op
+      zilcraft.token:
+        description: Allows usage of /zilcraft token
+        children:
+          zilcraft.token.add:
+            description: Allows usage of /zilcraft token add
+          zilcraft.token.remove:
+            description: Allows usage of /zilcraft token remove
+          zilcraft.token.list:
+            description: Allows usage of /zilcraft token list
+      zilcraft.account:
+        description: Allows usage of /zilcraft account
+        children:
+          zilcraft.account.create:
+            description: Allows usage of /zilcraft account create
+          zilcraft.account.import:
+            description: Allows usage of /zilcraft account import
+          zilcraft.account.set:
+            description: Allows usage of /zilcraft account set
+          zilcraft.account.rename:
+            description: Allows usage of /zilcraft account rename
+          zilcraft.account.remove:
+            description: Allows usage of /zilcraft account remove
