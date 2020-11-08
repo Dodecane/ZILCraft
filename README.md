@@ -5,7 +5,7 @@ Looking for the download link? [**Click here**](https://github.com/Dodecane/ZILC
 ZILCraft is a plugin which adds Zilliqa wallets to your Spigot Server.<br>
 Players can create their own Zilliqa wallets and send transactions to each other within the game. They can even do so without needing to know the recipients address.<br>
 
-## Demo Video
+## Demo Video and Demo Server
 [Coming soon]
 
 ## How to install
@@ -49,7 +49,51 @@ tokens:
  - /zilcraft network
 	 - Permission node: `zilcraft.network`(default all)
 	 - Shows information about connected network
- - 
+ - /zilcraft network
+	 - Permission node: `zilcraft.network`(default all)
+	 - Shows information about connected network
+ - /zilcraft network set <mainnet | testnet>
+	 - Permission node: `zilcraft.network.set`(default op)
+	 - Changes network
+ - /zilcraft unlock <account name> 
+	 - Permission node: `zilcraft.unlock`(default all)
+	 - Unlocks account
+ - /zilcraft lock <account name>
+	 - Permission node: `zilcraft.lock`(default all)
+	 - Locks account
+ - /zilcraft account create
+	 - Permission node: `zilcraft.account.create`(default all)
+	 - Creates new account
+ - /zilcraft account create
+	 - Permission node: `zilcraft.account.create`(default all)
+	 - Creates new account
+ - /zilcraft account import privatekey
+	 - Permission node: `zilcraft.account.import`(default all)
+	 - Imports existing account
+ - /zilcraft account remove <account name | all>
+	 - Permission node: `zilcraft.account.remove`(default all)
+	 - Removes account(s)
+ - /zilcraft account set <account name>
+	 - Permission node: `zilcraft.account.set`(default all)
+	 - Sets active account
+ - /zilcraft account rename <account name> <new account name>
+	 - Permission node: `zilcraft.account.rename`(default all)
+	 - Renames account
+ - /zilcraft account list
+	 - Permission node: `zilcraft.account.list`(default all)
+	 - Lists accounts
+ - /zilcraft send <username | address>
+	 - Permission node: `zilcraft.send`(default all)
+	 - Sends tokens to a player or address
+ - /zilcraft token add <mainnet | testnet> <contract address>
+	 - Permission node: `zilcraft.token.add`(default all)
+	 - Adds token by contract address
+ - /zilcraft token remove <mainnet | testnet> <token name(s)>
+	 - Permission node: `zilcraft.token.remove`(default all)
+	 - Removes added token(s)
+ - /zilcraft token list
+	 - Permission node: `zilcraft.token.list`(default all)
+	 - Lists added tokens
 
 ## Screenshots
 [WIP]
