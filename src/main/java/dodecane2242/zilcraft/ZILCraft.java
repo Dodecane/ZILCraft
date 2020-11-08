@@ -204,7 +204,7 @@ public class ZILCraft extends BaseCommand {
     @CommandPermission("zilcraft.network")
     public class Network extends BaseCommand {
         @Default
-        @Description("View connected network")
+        @Description("Show information about connected network")
         public void onZCNetwork(CommandSender sender) {
             sender.sendMessage("§3§lNetwork Information");
             sender.sendMessage("§eNetwork: §b" + networkName);
@@ -541,7 +541,8 @@ public class ZILCraft extends BaseCommand {
                         .addConversationAbandonedListener(new onCancel()).withTimeout(120);
                 factory.buildConversation(sender).begin();
             } else {
-                sender.sendMessage("§eWIP, exiting");
+                sender.sendMessage("§eWork in progress, closing wizard");
+                //TODO handle adding by mnemonic
             }
         }
 
@@ -553,7 +554,7 @@ public class ZILCraft extends BaseCommand {
         public void onZCAccountRemove(Player sender, @Values("@account_list|all") String name) {
             if(name.equals(WalletUtil.getActiveAccount(sender.getName()))){
                 sender.spigot().sendMessage(new ComponentBuilder("§cCannot remove active account §b"+name).create());
-                sender.spigot().sendMessage(new ComponentBuilder("§cEither change active account with §a/account set <account name> §cor remove all accounts with §a/account remove all").create());
+                sender.spigot().sendMessage(new ComponentBuilder("§cEither change active account with §a/zilcraft account set <account name> §cor remove all accounts with §a/zilcraft account remove all").create());
                 return;
             }
             sender.sendMessage("§6§lAccount removal wizard");
@@ -640,8 +641,12 @@ public class ZILCraft extends BaseCommand {
         @CommandCompletion("@account_list")
         public void onZCAccountRename(Player sender, @Values("@account_list") String oldName, String newName) {
             newName = newName.replace(" ", "_");
-            if (WalletUtil.renameAccount(sender, oldName, newName)) {
-                sender.sendMessage("§aAccount successfully renamed to §b" + newName);
+            if(WalletUtil.getUserAccounts(sender.getName()).containsKey(newName)){
+                sender.sendMessage("§cAccount name already in use");
+            }else{
+                if (WalletUtil.renameAccount(sender, oldName, newName)) {
+                    sender.sendMessage("§aAccount successfully renamed to §b" + newName);
+                }
             }
         }
 
@@ -699,7 +704,7 @@ public class ZILCraft extends BaseCommand {
         @CatchUnknown
         @Description("Send tokens to a player or address")
         @CommandCompletion("@players")
-        @Syntax("<account name | address>")
+        @Syntax("<username | address>")
         public void onZCSend(Player sender, @Single String arg) throws Exception {
             String username = sender.getName();
             String senderBech32address = WalletUtil.getActiveAddress(username);
@@ -1037,7 +1042,7 @@ public class ZILCraft extends BaseCommand {
         }
 
         @Subcommand("remove")
-        @Description("Remove added tokens")
+        @Description("Remove added token(s)")
         @CommandPermission("zilcraft.token.remove")
         @Syntax("<mainnet | testnet> <token name(s)>")
         @CommandCompletion("@full_network_list")

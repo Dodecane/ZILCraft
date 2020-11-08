@@ -1,6 +1,6 @@
 main: dodecane2242.zilcraft.App
 name: ZILCraft
-version: 0.0.9
+version: 0.0.10
 description: Zilliqa plugin for Minecraft
 author: dodecane2242
 commands:
@@ -52,3 +52,5 @@ permissions:
             description: Allows usage of /zilcraft account rename
           zilcraft.account.remove:
             description: Allows usage of /zilcraft account remove
+          zilcraft.account.list:
+            description: Allows usage of /zilcraft account list
