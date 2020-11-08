@@ -50,22 +50,19 @@ tokens:
  - /zilcraft save 
 	 - Permission node: `zilcraft.save`(default op)
 	 - Manually saves ZILCraft config and user accounts
- - /zilcraft balance <account name | address> 
+ - /zilcraft balance < account name | address > 
 	 - Permission node: `zilcraft.balance`(default all)
 	 - Retrieves token balances of account or address
  - /zilcraft network
 	 - Permission node: `zilcraft.network`(default all)
 	 - Shows information about connected network
- - /zilcraft network
-	 - Permission node: `zilcraft.network`(default all)
-	 - Shows information about connected network
- - /zilcraft network set <mainnet | testnet>
+ - /zilcraft network set < mainnet | testnet >
 	 - Permission node: `zilcraft.network.set`(default op)
 	 - Changes network
- - /zilcraft unlock <account name> 
+ - /zilcraft unlock < account name > 
 	 - Permission node: `zilcraft.unlock`(default all)
 	 - Unlocks account
- - /zilcraft lock <account name>
+ - /zilcraft lock < account name >
 	 - Permission node: `zilcraft.lock`(default all)
 	 - Locks account
  - /zilcraft account create
@@ -74,25 +71,25 @@ tokens:
  - /zilcraft account import privatekey
 	 - Permission node: `zilcraft.account.import`(default all)
 	 - Imports existing account
- - /zilcraft account remove <account name | all>
+ - /zilcraft account remove < account name | all >
 	 - Permission node: `zilcraft.account.remove`(default all)
 	 - Removes account(s)
- - /zilcraft account set <account name>
+ - /zilcraft account set < account name >
 	 - Permission node: `zilcraft.account.set`(default all)
 	 - Sets active account
- - /zilcraft account rename <account name> <new account name>
+ - /zilcraft account rename < account name > < new account name >
 	 - Permission node: `zilcraft.account.rename`(default all)
 	 - Renames account
  - /zilcraft account list
 	 - Permission node: `zilcraft.account.list`(default all)
 	 - Lists accounts
- - /zilcraft send <username | address>
+ - /zilcraft send < username | address >
 	 - Permission node: `zilcraft.send`(default all)
 	 - Sends tokens to a player or address
- - /zilcraft token add <mainnet | testnet> <contract address>
+ - /zilcraft token add < mainnet | testnet > < contract address >
 	 - Permission node: `zilcraft.token.add`(default all)
 	 - Adds token by contract address
- - /zilcraft token remove <mainnet | testnet> <token name(s)>
+ - /zilcraft token remove < mainnet | testnet > < token name(s) >
 	 - Permission node: `zilcraft.token.remove`(default all)
 	 - Removes added token(s)
  - /zilcraft token list
