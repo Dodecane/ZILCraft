@@ -12,7 +12,7 @@ Players can create their own Zilliqa wallets and send tokens to each other withi
 
 Drag and drop the jar file into your server's  _/plugins_  directory. Then, restart your server.  _**Do not use /reload, as it can cause intense memory leaks.**_
 
-After the restart, you should notice a new folder called  _/ZILCraft_  in your servers plugin directory.
+After the restart, you should notice a new folder called  _/ZILCraft_  in your server's plugin directory.
 
 ## Configuring ZILCraft
 
