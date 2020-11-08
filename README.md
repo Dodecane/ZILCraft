@@ -3,7 +3,7 @@
 Looking for the download link? [**Click here**](https://github.com/Dodecane/ZILCraft/releases/download/v0.0.9/ZILCraft-0.0.9.jar)
 
 ZILCraft is a plugin which adds Zilliqa wallets to your Spigot Server.<br>
-Players can create their own Zilliqa wallets and send transactions to each other within the game. They can even do so without needing to know the recipients address.<br>
+Players can create their own Zilliqa wallets and send tokens to each other within the game. They can even do so without needing to know the recipients address.<br>
 
 ## Demo Video and Demo Server
 [Coming soon]
