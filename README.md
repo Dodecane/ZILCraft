@@ -10,7 +10,7 @@ See ZILCraft in action<br>
 
 ## Demo server
 Try out ZILCraft yourself<br>
-Server IP: 18.140.217.25<br>
+(removed, contact me if you need a demo)<br>
 Supported Minecraft versions: Minecraft Java Edition v1.16.4 and Minecraft Bedrock Edition v1.16.x 
 
 ## How to install
